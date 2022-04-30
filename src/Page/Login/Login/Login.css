@@ -1,0 +1,94 @@
+.form-container{
+    width: 600px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+
+}
+/* .form-height{
+    height: 100vh;
+} */
+.form-title{
+    font-size: 35px;
+    color: #000;
+    font-weight: 400;
+}
+
+.input-group input{
+    width: 415px;
+    margin:  0 auto;
+    height: 55px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.form-submit{
+    width: 415px;
+    margin:  0 auto;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+.form-submit:hover{
+    background-color: black;
+    color: white;
+}
+.or-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or-data{
+    width: 100%;
+    border: 1px solid rgb(60, 55, 55);
+    margin: 0 20px;
+}
+.go-button{
+    width: 415px;
+    margin:  0 auto;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+.go-button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width:576px) {
+    .form-container{
+    width: 350px;
+    }
+    .form-title{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .input-group input{
+    width: 280px;
+    margin:  0 auto;
+    height: 30px;
+    font-size: 16px;
+    }
+    .form-submit , .go-button{
+    width: 280px;
+    height: 40px;
+    font-size: 18px;
+    }
+}

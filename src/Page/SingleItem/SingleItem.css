@@ -1,0 +1,19 @@
+
+.back-card-dtyle{
+    width: 320px;
+    height: auto;
+    border: 1px solid rgb(12, 14, 15);
+    border-radius: 6px;
+    padding: 20px;
+}
+.back-card-dtyle img {
+    width: 100%;
+    margin-top: -65px;
+    
+}
+
+@media screen and (max-width:576px) {
+    .back-card-dtyle{
+    width: 270px;
+    }
+}

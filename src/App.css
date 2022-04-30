@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+body{
+  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(89, 151, 205), white); */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+  font-family: 'Inter', sans-serif;
 }
 
 .App-logo {

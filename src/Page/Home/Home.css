@@ -1,0 +1,45 @@
+.home{
+    width: 70%;
+    margin: 0 auto;
+}
+.home-text{
+    font-size: 65px;
+    width: 45%;
+}
+.container-margin{
+    margin-top: -100px;
+}
+.inner-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-container{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.highlighted-text{
+    color: grey;
+    font-weight: bolder;
+}
+.align-x-axis{
+   margin-left: 37.5%;
+}
+
+@media screen and (max-width:576px) {
+    .home-text{
+    font-size: 35px;
+    width: 100%;
+    }
+    .container-margin{
+    margin-top: 0px;
+    }
+    .inner-items{
+    display: block;
+    }
+    .carousel-container{
+    width: 100%;
+    margin: -70px auto;
+    }
+}

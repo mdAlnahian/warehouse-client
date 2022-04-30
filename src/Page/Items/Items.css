@@ -1,0 +1,17 @@
+.cart-style{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+.f-bold {
+    font-weight: bolder;
+}
+
+@media screen and (max-width:576px) {
+    .cart-style{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    }
+
+}

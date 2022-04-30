@@ -1,0 +1,25 @@
+.header-style{
+    font-weight: bold;
+    /* background: transparent;
+    z-index: 100; */
+    color: black;
+    border-bottom: 2px solid black;
+}
+.font-style{
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+.font-style-brand{
+    font-size: 26px;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width:576px) {
+    .font-style{
+    font-size: 16px;
+    margin-top: 12px;
+    }
+    .font-style-brand{
+    font-size: 20px;
+    }
+}
