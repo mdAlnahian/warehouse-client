@@ -62,7 +62,8 @@ const Home = () => {
               className="text-center w-25 align-x-axis mt-5"
               variant="outline-dark"
             >
-              SEE ALL
+               SEE ALL 
+               
             </Button>
           </Link>
         </div>
