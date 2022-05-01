@@ -30,7 +30,14 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-        <Route path="/additem" element={<AddItem></AddItem>}></Route>
+        <Route
+          path="/additem"
+          element={
+            <RequireAuth>
+              <AddItem></AddItem>
+            </RequireAuth>
+          }
+        ></Route>
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>

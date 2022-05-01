@@ -40,15 +40,17 @@ const Header = () => {
             <Nav.Link as={Link} to="/about">
               ABOUT
             </Nav.Link>
-            <Nav.Link as={Link} to="/additem">
-              ADD ITEM
-            </Nav.Link>
           </Nav>
           <Nav className="font-style">
+            {user && (
+              <>
+                <Nav.Link as={Link} to="/additem">
+                  ADD ITEM
+                </Nav.Link>
+              </>
+            )}
             {user ? (
-              <Nav.Link onClick={handleSignOut}>
-                SIGNOUT
-              </Nav.Link>
+              <Nav.Link onClick={handleSignOut}>SIGNOUT</Nav.Link>
             ) : (
               <Nav.Link as={Link} to="/login" className="link-font">
                 LOGIN
