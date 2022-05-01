@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './AddItem.css'
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+
 
 const AddItem = () => {
 
@@ -22,35 +22,6 @@ const AddItem = () => {
                  console.log(result);
             })
        };
-
-    // const handleUserSignIn =(e)=>{
-    //     e.preventDefault();
-
-    //     const data = {};
-
-        // const url = `http://localhost:5000/item`;
-        //     fetch(url, {
-        //       method: "POST",
-        //       headers: {
-        //         "content-type": "application/json",
-        //       },
-        //       body: JSON.stringify(data),
-        //     })
-        //       .then((res) => res.json())
-        //       .then((result) => {
-        //         console.log(result);
-        //       })
-        //       .catch((error) => {
-        //         console.error("Error:", error);
-        // });
-        // const name = e.target.name.value;
-        // const quantity = e.target.quantity.value;
-        // const description = e.target.description.value;
-        // const price = e.target.price.value;
-        // const img = e.target.img.value;
-        // setNewItem(name, quantity, description, price, img);
-    // }
-
 
     return (
       <div>
@@ -99,9 +70,6 @@ const AddItem = () => {
             </div>
             <div className="mb-4">
               <input className="px-5 py-2" type="submit" value="ADD ITEM" />
-              {/* <Link to="/manage">
-                <input className="px-5 py-2" type="submit" value="ADD ITEM" />
-              </Link> */}
             </div>
           </form>
         </div>
