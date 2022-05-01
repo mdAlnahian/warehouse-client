@@ -4,7 +4,6 @@ import { useParams } from 'react-router';
 import './ItemDetails.css'
 
 
-
 const ItemDetails = () => {
   const { id } = useParams();
 
@@ -16,7 +15,6 @@ const ItemDetails = () => {
       .then((res) => res.json())
       .then((data) => setItem(data));
   },[])
-
 
         return (
           <div>
