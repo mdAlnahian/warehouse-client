@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 import "./SingleItem.css";
 
 const SingleItem = ({ item }) => {
-  const { name, id, description, img, quantity, price, supplier } = item;
+  const { name, _id, description, img, quantity, price, supplier } = item;
 
   const navigate = useNavigate();
   const moveToItemDetails = () => {
-    navigate(`/item/:${id}`);
+    navigate(`/item/${_id}`);
   };
 
   return (
@@ -22,7 +22,7 @@ const SingleItem = ({ item }) => {
           <h4>Price: ${price} per unit</h4>
           <h5>Supplier: {supplier}</h5>
           <Button
-            onClick={() => moveToItemDetails(id)}
+            onClick={() => moveToItemDetails(_id)}
             className="w-100 mt-3"
             variant="outline-dark"
           >

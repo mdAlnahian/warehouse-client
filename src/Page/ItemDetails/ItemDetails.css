@@ -1,0 +1,14 @@
+.single-data-info {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .single-data-info {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+}

@@ -8,7 +8,7 @@ import ItemDetails from "./Page/ItemDetails/ItemDetails";
 import Login from "./Page/Login/Login/Login";
 import Register from "./Page/Login/Register/Register";
 import RequireAuth from "./Page/RequireAuth/RequireAuth";
-
+import AddItem from "./Page/AddItem/AddItem";
 
 
 
@@ -30,6 +30,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path="/additem" element={<AddItem></AddItem>}></Route>
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>

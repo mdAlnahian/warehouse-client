@@ -21,8 +21,9 @@
 }
 
 .input-group input{
+    background: transparent;
     width: 415px;
-    margin:  0 auto;
+    margin: 0 auto;
     height: 55px;
     border: 1px solid black;
     box-sizing: border-box;
@@ -32,8 +33,9 @@
 }
 
 .form-submit{
+    background: transparent;
     width: 415px;
-    margin:  0 auto;
+    margin: 0 auto;
     height: 55px;
     border-radius: 5px;
     font-size: 20px;
@@ -43,7 +45,11 @@
 }
 .form-submit:hover{
     background-color: black;
+    /* opacity: 0.6; */
     color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+    border: 2px solid black;
 }
 .or-style{
     display: flex;
@@ -68,6 +74,7 @@
 .go-button:hover{
     background-color: black;
     color: white;
+    transition: 0.5s;
 }
 
 
