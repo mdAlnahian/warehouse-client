@@ -1,5 +1,6 @@
 import React  from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useItems from '../hooks/useItems';
 import './ManageItem.css'
 
@@ -27,9 +28,18 @@ const ManageItem = () => {
 
   return (
     <div className="mt-5 text-center w-50 mx-auto">
+      <Link to="/additem">
+        <Button
+          className="text-center w-50 mx-auto align-x-axis mb-5"
+          variant="outline-dark"
+        >
+         GO TO ADD ITEM SECTION
+        </Button>
+      </Link>
+
       <h2>Manage Your Item Here </h2>
       {items.map((item) => (
-        <div key={item._id} className='w-100'>
+        <div key={item._id} className="w-100">
           <div className="back-card-dtyle2 mb-4">
             <div>
               <img src={item.img} alt="" srcset="" />

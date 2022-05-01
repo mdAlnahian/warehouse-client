@@ -12,6 +12,8 @@ import AddItem from "./Page/AddItem/AddItem";
 import ManageItem from "./Page/ManageItem/ManageItem";
 import ExtraOne from "./Page/ExtraOne/ExtraOne";
 import ExtraTwo from "./Page/ExtraTwo/ExtraTwo";
+import NotFound from "./Page/NotFound/NotFound";
+import Blog from "./Page/Blog/Blog";
 
 
 
@@ -26,6 +28,7 @@ function App() {
         <Route path="/items" element={<Items></Items>}></Route>
         <Route path="/exOne" element={<ExtraOne></ExtraOne>}></Route>
         <Route path="/exTwo" element={<ExtraTwo></ExtraTwo>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
 
         <Route
           path="/item/:id"
@@ -54,6 +57,7 @@ function App() {
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
