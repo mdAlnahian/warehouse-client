@@ -10,6 +10,8 @@ import Register from "./Page/Login/Register/Register";
 import RequireAuth from "./Page/RequireAuth/RequireAuth";
 import AddItem from "./Page/AddItem/AddItem";
 import ManageItem from "./Page/ManageItem/ManageItem";
+import ExtraOne from "./Page/ExtraOne/ExtraOne";
+import ExtraTwo from "./Page/ExtraTwo/ExtraTwo";
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/items" element={<Items></Items>}></Route>
+        <Route path="/exOne" element={<ExtraOne></ExtraOne>}></Route>
+        <Route path="/exTwo" element={<ExtraTwo></ExtraTwo>}></Route>
 
         <Route
           path="/item/:id"

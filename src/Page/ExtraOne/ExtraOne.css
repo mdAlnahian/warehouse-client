@@ -1,0 +1,37 @@
+.main-extra{
+    width: 70%;
+    margin: 0 auto;
+}
+.text-extra1{
+    width: 55%;
+
+}
+.text-extra1 h2{
+    font-size: 60px;
+    margin-top: 65px;
+}
+.text-extra1 h2 span{
+    color: gray;
+}
+.image-extra1{
+    width: 45%;
+}
+
+@media screen and (max-width:576px) {
+    .main-extra{
+            flex-direction: column;
+    }
+    .text-extra1{
+    width: 80%;
+    margin: 0 auto;
+    }
+    .text-extra1 h2{
+    font-size: 30px;
+    margin-top: -20px;
+    }
+    .image-extra1{
+    width: 100%;
+    margin-top: 20px;
+    }
+
+}

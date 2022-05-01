@@ -7,6 +7,8 @@ import apple6 from "./apple6.png";
 import SingleItem from "../SingleItem/SingleItem";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ExtraOne from "../ExtraOne/ExtraOne";
+import ExtraTwo from "../ExtraTwo/ExtraTwo";
 
 const Home = () => {
   // js code for showing 1st 6 items
@@ -67,6 +69,12 @@ const Home = () => {
             </Button>
           </Link>
         </div>
+      </div>
+      <div>
+        <ExtraOne></ExtraOne>
+      </div>
+      <div>
+        <ExtraTwo></ExtraTwo>
       </div>
     </div>
   );
