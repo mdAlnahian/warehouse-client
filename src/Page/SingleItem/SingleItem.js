@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./SingleItem.css";
@@ -23,11 +23,18 @@ const SingleItem = ({ item }) => {
           <h5>Supplier: {supplier}</h5>
           <Button
             onClick={() => moveToItemDetails(_id)}
-            className="w-100 mt-3"
+            className="w-100 text-center mt-3"
             variant="outline-dark"
           >
-            Buy Now
+            Update
           </Button>
+          {/* <Button
+             onClick={() => handleDelete(item._id)}
+            className="w-50 text-center mt-3"
+            variant="outline-dark"
+          >
+            Delete
+          </Button> */}
         </div>
       </div>
     </div>

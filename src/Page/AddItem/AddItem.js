@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './AddItem.css'
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 
 const AddItem = () => {
 
@@ -98,55 +99,11 @@ const AddItem = () => {
             </div>
             <div className="mb-4">
               <input className="px-5 py-2" type="submit" value="ADD ITEM" />
+              {/* <Link to="/manage">
+                <input className="px-5 py-2" type="submit" value="ADD ITEM" />
+              </Link> */}
             </div>
           </form>
-          {/* <form onSubmit={handleUserSignIn}>
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                name="name"
-                placeholder="Product Name"
-                required
-              ></input>
-            </div>
-            <div className="input-group mb-3">
-              <input
-                type="number"
-                name="quantity"
-                placeholder="Product Quantity"
-                required
-              ></input>
-            </div>
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                name="description"
-                placeholder="Product Description"
-                required
-              ></input>
-            </div>
-            <div className="input-group mb-3">
-              <input
-                type="number"
-                name="price"
-                placeholder="Price"
-                required
-              ></input>
-            </div>
-            <div className="input-group mb-3">
-              <input
-                type="img"
-                name="img"
-                placeholder="Product Image URL"
-                required
-              ></input>
-            </div>
-            <input
-              className="mb-4 form-submit mx-auto"
-              type="submit"
-              value="Add ITEM"
-            />
-          </form> */}
         </div>
       </div>
     );

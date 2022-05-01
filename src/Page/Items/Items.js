@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import SingleItem from "../SingleItem/SingleItem";
 import "./Items.css";
 
@@ -13,14 +15,22 @@ const Items = () => {
 
   return (
     <div className="w-75 mx-auto mt-4">
-
       <h2 className="text-center f-bold mb-4"> OUR ITEMS </h2>
-      
+
       <div className="cart-style">
         {items.map((item) => (
           <SingleItem key={item._id} item={item}></SingleItem>
         ))}
       </div>
+      <Link to="/manage">
+        {" "}
+        <Button
+          className="text-center w-25 align-x-axis mt-5"
+          variant="outline-dark"
+        >
+          Manage Item Here
+        </Button>
+      </Link>
     </div>
   );
 };

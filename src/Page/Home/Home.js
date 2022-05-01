@@ -56,13 +56,13 @@ const Home = () => {
               <SingleItem key={item.id} item={item}></SingleItem>
             ))}
           </div>
-          <Link to="/items">
+          <Link to="/manage">
             {" "}
             <Button
               className="text-center w-25 align-x-axis mt-5"
               variant="outline-dark"
             >
-               SEE ALL 
+               Manage Item Here 
                
             </Button>
           </Link>
