@@ -10,11 +10,13 @@ import { Link } from "react-router-dom";
 import ExtraOne from "../ExtraOne/ExtraOne";
 import ExtraTwo from "../ExtraTwo/ExtraTwo";
 
+
 const Home = () => {
   // js code for showing 1st 6 items
   const [items, setItems] = useState([]);
-
+ 
   useEffect(() => {
+
     fetch("http://localhost:5000/item")
       .then((res) => res.json())
       .then((data) => setItems(data));
@@ -64,8 +66,7 @@ const Home = () => {
               className="text-center w-25 align-x-axis mt-5"
               variant="outline-dark"
             >
-               Manage Item Here 
-               
+              Manage Item Here
             </Button>
           </Link>
         </div>

@@ -10,12 +10,14 @@ import "./Login.css";
 import auth from "./firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loading from "../../Loading/Loading";
 
 const Login = () => {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [signInWithEmailAndPassword, user, error] =
+  const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
   const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth);
@@ -35,6 +37,12 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
+  if (loading) {
+      return <Loading></Loading>;
+  }
+  
   if (user || googleUser || githubUser) {
     navigate(from, { replace: true });
   }
@@ -44,7 +52,6 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
 
-  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
   const resetPassword = async () => {
     if (email) {
@@ -82,7 +89,7 @@ const Login = () => {
           <input className="mb-4 form-submit" type="submit" value="Login" />
         </form>
         <p>
-          New to lawyer Ahamed ? <Link to="/register">Please Register</Link>
+          New to pr-retailer ? <Link to="/register">Please Register</Link>
         </p>
         <p>
           Forget Password ?{" "}

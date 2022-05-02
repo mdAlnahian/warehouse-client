@@ -21,6 +21,7 @@ const AddItem = () => {
             .then((result) => {
                  console.log(result);
             })
+
        };
 
     return (

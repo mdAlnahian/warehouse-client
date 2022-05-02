@@ -14,13 +14,14 @@ import ExtraOne from "./Page/ExtraOne/ExtraOne";
 import ExtraTwo from "./Page/ExtraTwo/ExtraTwo";
 import NotFound from "./Page/NotFound/NotFound";
 import Blog from "./Page/Blog/Blog";
-
+import About from "./Page/About/About";
 
 
 
 function App() {
+
   return (
-    <div className="">
+    <div className="App">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/exOne" element={<ExtraOne></ExtraOne>}></Route>
         <Route path="/exTwo" element={<ExtraTwo></ExtraTwo>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
 
         <Route
           path="/item/:id"

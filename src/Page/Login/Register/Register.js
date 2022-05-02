@@ -7,16 +7,23 @@ import {
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../Login/firebase.init";
+import Loading from "../../Loading/Loading";
+
+
 
 const Register = () => {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const [createUserWithEmailAndPassword, user, hookError] =
+  const [createUserWithEmailAndPassword, user, loading, hookError] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+   const [sendEmailVerification, sending] =
+     useSendEmailVerification(auth);
 
   const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth);
   const [signInWithGithub, githubUser] = useSignInWithGithub(auth);
@@ -32,12 +39,20 @@ const Register = () => {
   const handleConfirmPasswordBlur = (event) => {
     setConfirmPassword(event.target.value);
   };
-  if (user || googleUser || githubUser) {
+
+  if (loading) {
+     return <Loading></Loading>;
+  }
+ 
+   if( user || googleUser || githubUser) {
     navigate("/home");
   }
 
+
+
   const handleCreateUser = async (event) => {
-    event.preventDefault();
+     event.preventDefault();
+
     if (password !== confirmPassword) {
       setError("Sorry! Both password did not matched");
       return;
@@ -48,7 +63,8 @@ const Register = () => {
     }
 
     await createUserWithEmailAndPassword(email, password);
-  };
+   
+  };;
 
   return (
     <div className="form-container mt-4">
@@ -84,7 +100,16 @@ const Register = () => {
           </div>
           <p style={{ color: "red" }}>{error}</p>
           <p style={{ color: "red" }}>{hookError}</p>
-          <input className="mb-4 form-submit" type="submit" value="Register" />
+          {/* emailverfication */}
+          <input
+            className="mb-4 form-submit"
+            type="submit"
+            value="Register"
+            onClick={async () => {
+              await sendEmailVerification();
+              alert("Sent email");
+            }}
+          />
         </form>
         <p>
           Already have an account ? <Link to="/login">Please Login</Link>

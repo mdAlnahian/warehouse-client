@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import ReStock from '../ReStock/ReStock';
 import './ItemDetails.css'
 
 
@@ -53,6 +54,7 @@ const ItemDetails = () => {
           </div>
         </div>
       </div>
+      <ReStock></ReStock>
     </div>
   );
 };
