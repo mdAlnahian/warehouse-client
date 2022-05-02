@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Pr-RETAILER
+* This website is for the admin panel of a retailer shop.It is very helpful for the users to maintain their product and to show the available product to their consumers.
+# Live Site Link
+(https://pr-retailer-new.web.app)
+
+# FrameWork and Functionality
+* React js
+* React Bootsrap
+* Firebase for auhtentication and authorization
+* Node , Express and Mongodb 
+* Heroku 
+* This is very functional website for the admin of a retailer shop 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
